@@ -6,7 +6,8 @@ const app = new express();
 
 mongoose.Promise = global.Promise;
 
-mongoose.connect('mongodb://ashokcrest:ashokcrest123@ds117691.mlab.com:17691/test-mongo-db')
+// mongoose.connect('mongodb://ashokcrest:ashokcrest123@ds117691.mlab.com:17691/test-mongo-db')
+mongoose.connect('mongodb://localhost:27017/test-db')
   .then(() =>  console.log('connection succesful'))
   .catch((err) => console.error(err));
 
